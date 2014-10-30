@@ -21,11 +21,16 @@
 
     <div id="container">
 
+        <h1><span>SendHub Coding Challenge</span></h1>
+
         <p>Send a message to a US telephone number using WebAudio.</p>
 
         <div id="meter">
-            <meter high="0.25" max="1" value="0"></meter>
-            <div class="value"></div>
+            <div id="volume">
+                <div class="label">Volume: </div>
+                <meter high="0.25" max="1" value="0"></meter>
+                <div class="value"></div>
+            </div>
         </div>
 
         <p>The meter's volume changes approximately every 50ms. When the detected volume is above the inputted threshold, your message will be sent.</p>
